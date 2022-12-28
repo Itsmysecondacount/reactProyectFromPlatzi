@@ -1,0 +1,38 @@
+.finder {
+    width: 200px;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+}
+
+.box {
+    width: 200px;
+    height: 50px;
+}
+
+.box input {
+    position: relative;
+}
+
+.box label {
+    position: relative;
+    top: -40px;
+    color: #fff;
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+input:focus ~ label,
+input:valid ~ label{
+    color: rgb(114, 136, 144);
+    top: -60px;
+    font-size: 0.9rem;
+    transition: 0.5s;
+}

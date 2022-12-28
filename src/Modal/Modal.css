@@ -1,0 +1,91 @@
+.ModalBackground {
+    background-color: rgba(25, 20, 20, 0.5);
+    position: fixed;
+    top: -10px;
+    left: -10px;
+    right: -10px;
+    bottom: -10px;
+}
+
+.ModalContainer {
+    margin: 27vh auto;
+    background-color: #141e30;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: initial;
+    align-items: center;
+    height: 240px;
+    max-width: 300px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 3px 0px #f9f9ff,
+    0px 0px 4px 0px #6496f2;
+}
+
+.ModalContainer span {
+    margin: 0;
+    align-self: flex-end;
+    padding: 5px 5px 0px 0px;
+    transition: 0.4s;
+    color: #4a4c4f;
+    font-weight: bold;
+}
+
+.ModalContainer span:hover {
+    cursor: pointer;
+    color: #6496f2;
+}
+
+.ModalContainer h2 {
+    margin-top: 0;
+    font-size: 1.6rem;
+}
+
+.ModalContainer input {
+    font-size: 1rem;
+    padding: 13px 0;
+    color: #fff;
+    margin-bottom: 10px;
+    border: none;
+    border-bottom: 1px solid #fff;
+    outline: none;
+    background: transparent;
+    position: relative;
+}
+
+.ModalContainer label {
+    position: relative;
+    left: -70px;
+    top: -35px;
+    color: rgba(255, 255, 255, 0.388);
+    font-size: 1.1rem;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.ModalContainer  button {
+    width: 150px;
+    height: 50px;
+    color: #fff;
+    font-weight: bold;
+    background: #141e30;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 15px 25px rgba(0,0,0,.6);
+    border-radius: 10px;
+    outline: none;
+    background: linear-gradient((0deg, #141e30) 0%, rgb(177, 167, 167) 100%);
+    line-height: 42px;
+    padding: 0;
+    border: none;
+}
+
+.ModalContainer button:hover {
+    background: #2f4672;
+    background: linear-gradient(0deg, #2f4672 0%, #172238 100%);
+    box-shadow: 0px 4px 25px rgba(80, 74, 74, 0.2);
+}
