@@ -1,13 +1,10 @@
 import React from "react";
 import "./TodoSearch.css";
-import { TodoContext } from "../TodoContext";
 
 
-function TodoSearch(){  
+function TodoSearch({searchValue, setSearchValue}){  
 
     return (
-        <TodoContext.Consumer>
-            {({searchValue, setSearchValue}) => (
                 <form>
                 <div className="box">
                     <input
@@ -22,8 +19,6 @@ function TodoSearch(){
                     <label>Buscar</label>
                 </div>
             </form>
-            )}
-        </TodoContext.Consumer>
     );
 }
 

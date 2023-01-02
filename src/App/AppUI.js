@@ -11,16 +11,20 @@ import { TodosLoading } from "../TodosLoading";
 import { Modal } from "../Modal";
 
 function AppUI() {
-    const {error, 
-      loading, 
-      searchedTodos, 
-      completeTodo, 
+    const {loading,
+      error,
+      completedTodos,
+      totalTodos,
+      searchValue,
+      setSearchValue,
+      searchedTodos,
+      completeTodo,
       deleteTodo,
+      addTodos,
       openModal,
       setOpenModal,
       textOpenModal,
       setTextOpenModal,
-      addTodos,
       empty,
     } = React.useContext(TodoContext);
 
@@ -28,9 +32,13 @@ function AppUI() {
     return (
       <React.Fragment>
       <div className='div-flex'>
-      <TodoCounter/>
+      <TodoCounter 
+        completedTodos={completedTodos} 
+        totalTodos={totalTodos}/>
       {/* <h2>Has completado 2 de 3 TODOs</h2> */}
-      <TodoSearch/>
+      <TodoSearch
+        searchValue={searchValue}
+        setSearchValue={setSearchValue}/>
       {/* <input type="text" placeholder='Cebolla' /> */}
 
       <TodoList>
